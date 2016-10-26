@@ -4,6 +4,11 @@ Local provisioning for getting started with ruby development
 Based on the blog post [here](http://marvelley.com/blog/2014/04/11/local-provisioning-with-ansible/).
 
 Steps:
+Install xcode command line tools:
+
+```
+xcode-select --install
+```
 
 On your computer, you first need ansible.  Best way to install on the mac is:
 
