@@ -1,0 +1,46 @@
+---
+- hosts: all
+
+  vars:
+    applications:
+      - atom
+      - caffeine
+      - clipmenu
+      - iterm2
+      - mou
+      - postgres
+    application_dir: /Applications
+    brews:
+      - ack
+      - cmake
+      - curl
+      - git
+      - leiningen
+      - leveldb
+      - libevent
+      - libffi
+      - libjson-rpc-cpp
+      - libmemcached
+      - libmicrohttpd
+      - libpng
+      - libtasn1
+      - libtiff
+      - libtool
+      - libyaml
+      - openssl
+      - sqlite
+    dotfiles_dir: ~/dotfiles
+    name: YOUR_NAME_HERE
+    email: YOUR_EMAIL_HERE
+    github_username: YOUR_USERNAME_HERE
+    zsh_path: /bin/zsh
+
+  tasks:
+    - include: tasks/homebrew.yml
+      tags: [homebrew]
+    - include: tasks/zsh.yml
+      tags: [zsh]
+    - include: tasks/dotfiles.yml
+      tags: [dotfiles]
+    - include: tasks/rvm.yml
+      tags: [rvm]

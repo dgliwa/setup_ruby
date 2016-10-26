@@ -1,0 +1,17 @@
+---
+- name: Check for rvm installed
+  stat: path=~/.rvm
+  register: rvm_installed
+
+- name: Install rvm
+  shell: curl -L get.rvm.io | bash -s stable; source ~/.zshrc
+  when: rvm_installed.stat.exists == false
+
+- name: Install ruby versions using rvm
+  shell: rvm install ruby-2.3.0
+
+- name: Set default ruby
+  shell: rvm use --default ruby-2.3.0
+
+- name: Install bundler
+  shell: gem install bundler
