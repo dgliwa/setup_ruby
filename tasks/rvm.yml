@@ -4,7 +4,7 @@
   register: rvm_installed
 
 - name: Install rvm
-  shell: curl -L get.rvm.io | bash -s stable; source ~/.zshrc
+  shell: curl -L get.rvm.io | bash -s stable; source ~/.profile
   when: rvm_installed.stat.exists == false
 
 - name: Install ruby versions using rvm
