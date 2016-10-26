@@ -12,21 +12,8 @@
     application_dir: /Applications
     brews:
       - ack
-      - cmake
       - curl
       - git
-      - leiningen
-      - leveldb
-      - libevent
-      - libffi
-      - libjson-rpc-cpp
-      - libmemcached
-      - libmicrohttpd
-      - libpng
-      - libtasn1
-      - libtiff
-      - libtool
-      - libyaml
       - openssl
       - sqlite
     dotfiles_dir: ~/dotfiles

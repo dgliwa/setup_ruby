@@ -19,6 +19,11 @@ Clone this repo and run the setup by running the following:
 
 ```
 git clone git@github.com:dgliwa/setup_ruby.git
+```
+
+Open the `playbook.yml` file and change the name, email, and github_username to your information.
+
+```
 cd ./setup_ruby
 ansible-playbook -i "localhost," -c local playbook.yml
 ```
