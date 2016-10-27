@@ -13,7 +13,7 @@ xcode-select --install
 On your computer, you first need ansible.  Best way to install on the mac is:
 
 ```
-curl https://bootstrap.pypa.io/ez_setup.py -o - | sudo python
+sudo bash -c 'curl https://bootstrap.pypa.io/ez_setup.py -o - | python'
 sudo easy_install pip
 pip install ansible
 ```
