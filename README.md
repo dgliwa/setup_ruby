@@ -19,7 +19,7 @@ pip install ansible
 ```
 If you have problems installing pip, you may want to download and use [this python](https://www.python.org/ftp/python/2.7.12/python-2.7.12-macosx10.6.pkg). Once installed, go to the python folder in your applications and click the `Update Shell Profile.command` file.  Instead of the above commands, run simply `pip install ansible`.
 
-You also need to [generate a keypair](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) and add it to your github, as this script clones my [dotfiles repo](https://www.github.com/dgliwa/dotfiles)
+You need to generate a keypair and add it to your github account.  [Click here](https://help.github.com/articles/generating-an-ssh-key/) and follow the steps to do so.
 
 Clone this repo and run the setup by running the following:
 
