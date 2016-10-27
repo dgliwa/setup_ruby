@@ -15,6 +15,7 @@
       - curl
       - git
       - openssl
+      - python
       - sqlite
     dotfiles_dir: ~/dotfiles
     name: YOUR_NAME_HERE
